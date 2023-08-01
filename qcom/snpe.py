@@ -38,3 +38,37 @@ sudo find / -name "libSNPE.so" 2>/dev/null
 export LD_LIBRARY_PATH=/opt/qcom/aistack/snpe/2.12.0.230626/lib/x86_64-linux-clang:$LD_LIBRARY_PATH 
 # issue - ./snpe-net-run: /lib/x86_64-linux-gnu/libm.so.6: version `GLIBC_2.29' not found 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# ref
+# Run snpe-sample with the Alexnet model on the target. This assumes that you have done the setup steps for running Run on Android Target to push to the target all the sample data files and Alexnet model.
+
+adb shell
+export SNPE_TARGET_ARCH=arm-android-clang6.0
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/data/local/tmp/snpeexample/$SNPE_TARGET_ARCH/lib
+export PATH=$PATH:/data/local/tmp/snpeexample/$SNPE_TARGET_ARCH/bin
+cd /data/local/tmp/alexnet
+snpe-sample -b ITENSOR -d bvlc_alexnet.dlc -i target_raw_list.txt -o output_sample
+exit
