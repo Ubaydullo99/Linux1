@@ -22,3 +22,22 @@ pip3 install mako==1.1.0
 sudo pip3 install MarkupSafe
 sudo pip3 install mako==1.1.0
 check-python-dependency
+
+
+# To check snpe working fine 
+cd /opt/qcom/aistack/snpe/2.12.0.230626/bin
+pip3 install tensorflow
+./envcheck -t
+
+
+# To use the snpe
+uname -m
+cd /opt/qcom/aistack/snpe/2.12.0.230626/bin/x86_64-linux-clang
+./snpe-net-run
+# issue Add the directory containing libSNPE.so to the LD_LIBRARY_PATH environment variable
+sudo find / -name "libSNPE.so" 2>/dev/null
+export LD_LIBRARY_PATH=/opt/qcom/aistack/snpe/2.12.0.230626/lib/x86_64-linux-clang:$LD_LIBRARY_PATH
+# 
+
+
+
