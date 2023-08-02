@@ -25,8 +25,9 @@ sudo apt install python3-pip
 # or
 export PATH="$PATH:/opt/qcom/aistack/snpe/2.13.0.230730/bin" # set full path to script
 check-linux-dependency.sh
-  
+
 check-python-dependency
+
 # if errors encounters (python setup.py), fariler error code 1 in MarkupSafe
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 python3 get-pip.py
