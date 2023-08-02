@@ -1,5 +1,15 @@
              ### SNPE sdk installation
 # isntall snpe sdk here the link - https://qpm.qualcomm.com/#/main/tools/details/qualcomm_neural_processing_sdk
+#https://developer.qualcomm.com/software/qualcomm-neural-processing-sdk/windows-on-snapdragon
+
+sudo dpkg -i QualcommPackageManager3.3.0.83.1.Linux-x86.deb
+sudo apt-get install -f
+qpm --version
+qpm-cli --login
+qpm-cli --license-activate qualcomm_neural_processing_sdk
+qpm-cli --extract qualcomm_neural_processing_sdk # (or)
+qpm-cli --extract <full path to downloaded .qik file>
+
 cd /opt/qcom/aistack/snpe/2.12.0.230626
 ls
 
@@ -11,7 +21,11 @@ ls
 cd /opt/qcom/aistack/snpe/2.12.0.230626/bin
 sudo apt update
 sudo apt install python3-pip
+./check-linux-dependency.sh
+# or
+export PATH="$PATH:/opt/qcom/aistack/snpe/2.13.0.230730/bin" # set full path to script
 check-linux-dependency.sh
+  
 check-python-dependency
 # if errors encounters (python setup.py), fariler error code 1 in MarkupSafe
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
