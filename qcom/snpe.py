@@ -87,3 +87,6 @@ export PATH=$PATH:/data/local/tmp/snpeexample/$SNPE_TARGET_ARCH/bin
 cd /data/local/tmp/alexnet
 snpe-sample -b ITENSOR -d bvlc_alexnet.dlc -i target_raw_list.txt -o output_sample
 exit
+
+
+# https://developer.qualcomm.com/software/qualcomm-neural-processing-sdk/getting-started
