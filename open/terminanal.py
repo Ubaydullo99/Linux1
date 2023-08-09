@@ -8,8 +8,6 @@ sudo su # to access the root
 
 
 
-
-
                                     ### Tensorflow installation
 # https://developer.qualcomm.com/sites/default/files/docs/snpe/setup_tensorflow.html 
 sudo apt update
