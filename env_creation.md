@@ -14,3 +14,6 @@ ls
 source bin/activate   # activate environment
 
 ```
+
+# ref: https://www.linode.com/docs/guides/create-a-python-virtualenv-on-ubuntu-18-04/
+
