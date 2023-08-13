@@ -74,9 +74,6 @@ export LD_LIBRARY_PATH=/opt/qcom/aistack/snpe/2.12.0.230626/lib/x86_64-linux-cla
 
 
 
-
-
-
 # ref
 # Run snpe-sample with the Alexnet model on the target. This assumes that you have done the setup steps for running Run on Android Target to push to the target all the sample data files and Alexnet model.
 
