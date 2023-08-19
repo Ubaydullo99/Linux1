@@ -42,4 +42,4 @@ print(np.__version__)
 - or
 ```console
 python -c "import numpy as np; print(np.__version__)"
-```
+```   
