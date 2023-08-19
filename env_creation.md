@@ -1,5 +1,5 @@
 # To create environemtn in Ubuntu 18.04
-
+  
 ```console
 sudo apt-get update
 sudo apt-get upgrade
