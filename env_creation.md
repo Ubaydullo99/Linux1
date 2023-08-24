@@ -1,4 +1,4 @@
-# To create environemtn in Ubuntu 18.04
+# To create environment in Ubuntu 18.04 in rb5 device
   
 ```console
 sudo apt-get update
@@ -43,3 +43,13 @@ print(np.__version__)
 ```console
 python -c "import numpy as np; print(np.__version__)"
 ```   
+
+
+## To create venv with python level for Ubuntu 20.04 for VM
+    sudo apt update
+
+    # install venv tools
+    sudo apt install python3.8 python3.8-venv
+
+    python3.8 -m venv myenv
+    source myenv/bin/activate
